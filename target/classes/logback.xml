@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <appender name="console" class="ch.qos.logback.core.ConsoleAppender">
+    <encoder>
+      <pattern>%4d{yyyy-MM-dd HH:mm:ss} %-5p [%-15.15t] - %c - %m%n</pattern>
+    </encoder>
+  </appender>
+  
+  <appender name="FILE" class="so.tree.logger.CustomFileAppender">
+      <layout class="ch.qos.logback.classic.PatternLayout">
+          <pattern>%m%n</pattern>
+      </layout>
+      <File>sample-log.txt</File>
+      <Prifix>#륜#</Prifix>
+  </appender>
+  
+  <logger name="so.tree.logger" level="INFO" />
+  
+  <root level="ERROR">
+    <appender-ref ref="console"/>
+    <appender-ref ref="FILE"/>
+  </root>
+</configuration>

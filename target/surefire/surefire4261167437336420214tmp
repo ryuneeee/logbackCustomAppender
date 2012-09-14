@@ -1,0 +1,5 @@
+#surefire
+#Wed Sep 05 23:08:00 KST 2012
+user.dir=/Users/Ryun/Develop/workspace/logger
+localRepository=/Users/Ryun/.m2/repository
+basedir=/Users/Ryun/Develop/workspace/logger
